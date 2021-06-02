@@ -7,6 +7,9 @@
     "start": "nodemon ./src/server.js",
     "lint": "eslint ./src"
   },
+  "engines": {
+    "node": "14.x"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eby8zevin/JavaScript-BookshelfAPI.git"
