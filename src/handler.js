@@ -154,6 +154,8 @@ const getAllBooksHandler = (request, h) => {
 
 };
 
+// Kriteria 3 : API dapat menampilkan detail buku
+
 module.exports = {
   addBookHandler,
   getAllBooksHandler,
