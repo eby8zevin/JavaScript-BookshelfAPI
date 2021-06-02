@@ -1,4 +1,7 @@
+// npm install @hapi/hapi
 const Hapi = require('@hapi/hapi');
+
+// files
 const routes = require('./routes');
 
 const init = async () => {
@@ -15,7 +18,7 @@ const init = async () => {
   server.route(routes);
 
   await server.start();
-  console.log(`Server berjalan pada ${server.info.uri}`);
+  console.log(`Server running on ${server.info.uri}`);
 };
 
 init();
