@@ -17,26 +17,26 @@ const routes = [
     path: '/books',
     handler: getAllBooksHandler,
   },
-  // {
-  //   method: 'GET',
-  //   path: '/books/{id}',
-  //   handler: getBookByIdHandler,
-  // },
-  // {
-  //   method: 'PUT',
-  //   path: '/books/{id}',
-  //   handler: editBookByIdHandler,
-  // },
-  // {
-  //   method: 'DELETE',
-  //   path: '/books/{id}',
-  //   handler: deleteBookByIdHandler,
-  // },
-  // {
-  //   method: '*',
-  //   path: '/{any*}',
-  //   handler: () => 'Page not found',
-  // },
+  {
+    method: 'GET',
+    path: '/books/{bookId}',
+    handler: getBookByIdHandler,
+  },
+  {
+    method: 'PUT',
+    path: '/books/{bookId}',
+    handler: editBookByIdHandler,
+  },
+  {
+    method: 'DELETE',
+    path: '/books/{bookId}',
+    handler: deleteBookByIdHandler,
+  },
+  {
+    method: '*',
+    path: '/{any*}',
+    handler: () => 'Page not found',
+  },
 ];
 
 module.exports = routes;
